@@ -1,0 +1,777 @@
+body{
+	
+	/*display: flex;
+	flex-direction: column;
+	align-content: center;*/
+}
+.main-container{
+	max-width: 1400px;
+	margin: auto;
+	
+}
+.header-container {
+	display: flex;
+	z-index: -1;
+}
+nav {
+	display: flex;
+	position: -webkit-sticky;
+	position: sticky;
+	top: -1px;
+	/*position: fixed;*/
+	width: 100%;
+	background-color: white;
+	padding: 10px 50px;
+	align-items: baseline;
+	
+}
+
+
+.logo a{
+	text-decoration: none;
+	font-size: 30px;
+	color: hsl(257, 27%, 26%);
+	font-weight: bold;
+	font-family: Poppins;
+	cursor: pointer;
+	/*cand dai click te duce la inceputul paginii*/
+}
+.logo a span{
+	color: hsl(180, 66%, 49%); 
+}
+
+
+.ul-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 15px;
+	color: hsl(0, 0%, 75%);
+	font-weight: bold;
+	margin-left: 20px;
+	cursor: pointer;
+	align-items: baseline;
+	
+	/*- cand dai click pe link te duce la sectiunea respectiva din pagina
+- cand dai click pe Login te duce la pagina de Login*/
+}
+.ul-container a {
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  font-size: 15px;
+}
+.ul-info{
+	display: flex;
+	gap: 20px;
+	align-items: baseline;
+	
+}
+.ul-logIn{
+	display: flex;
+	gap: 20px;
+	align-items: baseline;
+	
+}
+
+
+.sign-up-button a{
+	padding: 15px;
+	background-color: hsl(180, 66%, 49%);
+	color: white;
+	height: 50px;
+	border-radius: 50px;
+	cursor: pointer;
+	border-color: transparent;
+}
+.sign-up-button a:hover{
+	border: 1px solid hsl(180, 66%, 49%);
+	background-color: white;
+	color: hsl(180, 66%, 49%);
+}
+.hamburger{
+	display: none;
+	background-color: transparent;
+	border: 0;
+	font-size: 20px;
+	cursor: pointer;
+}
+.hamburger .hr {
+	display: none;
+}
+.humburger:focums {
+	outline: none;
+}
+
+/*hero container*/
+.hero-container{
+	margin: 0px 50px 100px 50px;
+	display: flex;
+	position: relative;
+	/*width: 100%;*/
+}
+#hero-background-img{
+	position: absolute;
+	top: 0px;
+	left: -50px;
+	z-index: -1;
+}
+.hero-container-text{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	font-family: Poppins;
+}
+.hero-container-text h1 {
+	font-size: 75px;
+	margin-top: 75px;
+	font-weight: bold;
+	color: hsl(257, 27%, 26%);
+}
+.hero-container-text p{
+	margin-top: 15px;
+	font-size: 15px;
+	color: hsl(0, 0%, 75%);
+}
+.hero-container-img {
+	display: flex;
+	align-content: center;
+	width: 50%;
+	
+}
+#hero-img{
+	transform:translateX(50px);
+	z-index: -1;
+	width: 100%;
+}
+
+.get-started-button {
+	padding: 15px 25px;
+	background-color: hsl(180, 66%, 49%);
+	font-size: 15px;
+	margin: 15px 0px;
+	color: white;
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	cursor: pointer;
+	border-color: transparent;
+}
+.get-started-button:hover{
+	border: 1px solid hsl(180, 66%, 49%);
+	background-color: white;
+	color: hsl(180, 66%, 49%);
+}
+
+.transparent-middle-container{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -40px;
+	
+
+	
+}
+.middle-container {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	background-color: hsl(257, 27%, 26%);
+	background-image: url("../images/bg-boost-desktop.svg");
+	border-radius: 10px;
+	
+}
+.benefits-container{
+	background-color: hsl(0, 0%, 75%, 0.3);
+	padding: 100px 15px 30px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: -1;
+	width: 100%;
+}
+
+.benefits-container h1{
+	font-size: 24px;
+	font-weight: bolt;
+	text-align: center;
+}
+.benefits-container p {
+	font-size: 15px;
+	margin-top: 15px;
+	color: hsl(257, 7%, 63%);
+}
+
+.benefits-container-cards{
+	display: flex;
+	
+}
+.benefits-card{
+	margin: 75px 25px 25px;
+	padding: 70px 30px 30px;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 30%;
+	/*position: relative;*/
+}
+.benefits-card h1{
+	font-size: 20px;
+	margin-top: -25%;
+}
+.benefits-img-container{
+	background-color: hsl(257, 27%, 26%); 
+	border-radius: 50%;
+	padding: 20px;
+	position: relative;
+	bottom: 110px;
+	/*top: -70%;*/
+	height: 80px;
+	width: 80px;
+	align-self: center;
+
+	/*width: 100px;*/
+}
+.benefits-text-container{
+	padding-top: 0px;
+}
+
+.reviews-container {
+	display: flex;
+	padding: 50px 100px;
+	background-color: white;
+	flex-direction: column;
+}
+.reviews-container h1{
+	font-size: 50px;
+	margin: 15px 0px;
+	color: hsl(257, 27%, 26%);
+	font-weight: bold;
+}
+.reviews-container p{
+	font-size: 15px;
+	color: hsl(257, 27%, 26%);
+	max-width: 40ch;
+}
+.text-rating-reviews-container {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	align-content: space-between;
+
+}
+.text-reviews{
+	width: 50%;
+	padding-right: 60px;
+	display: flex;
+	flex-direction: column;
+}
+.rating-reviews{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.stars-container{
+	width: 500px;
+	background-color: hsl(28, 42%, 94%);;
+	padding: 15px;
+	border-radius: 5px;
+	display: flex;
+	
+}
+.five-stars{
+	margin: 0px 30px;
+	color: hsl(28, 80%, 52%); 
+	display: flex;
+	gap: 10px;
+}
+.fa-star {
+	/*margin: 5px;*/
+}
+.rated {
+	font-weight: bold;
+	color: hsl(257, 27%, 26%);
+}
+.cards-reviews-container{
+	display: flex;
+	gap: 15px;
+	justify-content: space-between;
+}
+.card-review{
+	margin: 50px 0px;
+	padding: 30px;
+	border-radius: 5px;
+	max-width: 32ch;
+	background-color: hsl(257, 27%, 26%);
+	color: white;
+}
+.client-data{
+	display: flex;
+	
+}
+.client-photo{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+.client-name-status-container h3{
+	font-size: 15px;
+	font-weight: bold;
+}
+.client-name-status-container h4{
+	font-size: 13px;
+	color: hsl(180, 66%, 49%);
+}
+.client-review p{
+	margin-top: 30px;
+	font-size: 13px;
+	color: white;
+}
+
+
+
+img[alt="decorations-top"]{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+}
+img[alt="decorations-bottom"]{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.countdown-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.countdown-and-prices{
+	background-color: hsl(0, 0%, 75%, 0.3);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: hsl(260, 8%, 14%);
+	max-width: 25ch;
+	align-self: center;
+}
+.countdown {
+	padding: 50px;
+	width: 500px;
+	display:flex;
+	justify-content: space-around;
+	font-size: 18px;
+	color: hsl(260, 8%, 14%);
+	text-align: center;
+}
+.day, .hour, .minute, .second {
+	
+}
+.prices-section {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+.button-container {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	align-self: center;
+}
+button {
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.button-container button {
+	background-color: white;
+	color: hsl(257, 27%, 26%);
+	border: 1px solid hsl(257, 27%, 26%);
+}
+
+.button-container button[value="active"] {
+	background-color:  hsl(257, 27%, 26%);
+	color: white;
+}
+.button-container button:hover {
+	border: 1px solid hsl(0, 0%, 100%);
+}
+.card-container{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: baseline;
+}
+.offer-card{
+	width: 250px;
+	padding: 15px;
+	border-radius: 10px;
+	color: hsl(257, 27%, 26%);
+	font-size: 15px;
+	background-color: white;
+}
+.price{
+	font-size: 40px;
+	font-weight: bold;
+	margin: 20px;
+}
+.professional-card {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: hsl(257, 27%, 26%);
+	color: white;
+	
+}
+
+.hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid hsl(257, 27%, 26%);
+}
+.professional-card hr {
+	border: 1px solid white;
+}
+
+.get-started-button {
+	padding: 15px 25px;
+	background-color: hsl(180, 66%, 49%);
+	font-size: 15px;
+	margin: 15px 0px;
+	color: white;
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	cursor: pointer;
+	border-color: transparent;
+}
+.get-started-button:hover{
+	border: 1px solid hsl(180, 66%, 49%);
+	background-color: white;
+	color: hsl(180, 66%, 49%);
+}
+
+/*FAQ*/
+.FAQ-section{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+.FAQ-container{
+	margin: 100px 0px;
+	padding: 20px;
+	background-color: hsl(257, 27%, 26%);
+	width: 1000px;
+	display: flex;
+	border-radius: 10px;
+}
+.FAQ-container-img{
+	width: 33%;
+	position: relative;
+	
+}
+.FAQ-container-img img{
+	height: 300px;
+	width: 350px;
+	position: absolute;
+	left: -75px;
+	
+	top: 20%;
+	align-items: center;
+}
+.FAQ-container-text{
+	width: 66%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+.FAQ-title{
+	align-self: center;
+	margin: 15px 0px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.questions-container{
+	/*display: flex;
+	flex-direction: column;*/
+}
+.question{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	/*font-weight: bold;*/
+}
+.answer {
+	margin-bottom: 10px;
+	font-size: 12px;
+	max-width: 90%;
+	display: none;
+}
+.question h3{
+	
+}
+.icon-arrow-down{
+	width: 7px;
+	height: 7px;
+}
+.FAQ-icon-btn{
+	background-color: transparent;
+	border: none;
+	display: flex;
+	justify-content: flex-end;
+}
+.call-to-action-2{
+	background-color: hsl(257, 27%, 26%);
+	padding: 50px 15px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	
+}
+.call-to-action-2 img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.call-to-action-text-and-btn{
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.call-to-action-text-and-btn h2 {
+	margin: 15px 0px;
+	font-size: 34px;
+	font-weight: bolt;
+	color: white;
+}
+
+/*Footer*/
+.footer-container{
+	padding: 15px 50px;
+	background: hsl(260, 8%, 14%);
+	display: flex;
+	justify-content: space-between;
+}
+.footer-icons{
+	display: flex;
+	gap: 10px;
+	cursor: pointer;
+	color: white;
+	font-size: 25px;
+}
+
+
+@media only screen and (max-width: 575px){
+	nav{
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.ul-container {
+		display: none;
+		align-items: center;
+		gap: 20px;
+	}
+	.ul-container.show {
+		padding: 25px;
+		margin-top: 25px;
+		background: hsl(257, 27%, 26%);
+		position: sticky;
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		margin-top: 20px;
+		border-radius: 10px;
+		z-index: 2;
+		
+	}
+	.hamburger {
+		display: block;
+	}
+	.hr {
+		display: block;
+		width: 100%;
+		border: 1px solid white;
+	}
+	
+	.ul-info {
+		flex-direction: column;
+		
+	}
+	.ul-logIn {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.sign-up-button {
+		width: 100%;
+		text-align: center;
+	}
+	
+	/*hero container*/
+	.hero-container{
+		flex-direction: column-reverse;
+		padding: 30px 15px 100px 15px;
+	}
+	#hero-background-img{
+		display:none;
+	}
+	.hero-container-img{
+		width: 50%;
+	}
+	#hero-img{
+		align-self: center;
+		transform:translateX(0px);
+		width: 200%;
+	}
+	.hero-container-text{
+		width: 100%;	
+		text-align: center;
+	}
+	.hero-container-text h1 {
+		font-size: 30px;
+		margin-top: 25px;
+	}
+	.benefits-container-cards {
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.benefits-card{
+		width: 100%;
+	}
+	.benefits-card h1{
+	margin-top: -20%;
+	}
+	
+	/*reviews*/
+	.reviews-container {
+		padding: 50px 0px 50px 0px;
+		
+	}
+	.text-rating-reviews-container{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 25px;
+	}
+	.text-reviews{
+		width: 100%;
+		align-items: center;
+		padding-right: 0px;
+	}
+	
+	.cards-reviews-container {
+		flex-direction: column;	
+		margin: 50px 0px 0px;
+		
+	}
+	
+	.card-review {
+	
+		margin: 0px;
+		max-width: 100ch;
+		align-content: center;
+	}
+	.client-review{
+		width: 100%;
+	}
+	
+	.reviews-container p{
+		max-width: 100ch;
+	}
+	
+	
+	/*countdown*/
+	.countdown {
+		width: 300px;
+		gap: 10px;
+		align-self: center;
+	}
+	.button-container {
+		width: 250px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.card-container{
+		flex-direction: column;
+		gap: 20px;
+	}
+	.countdown-section>div>h2 {
+		
+	}
+	
+	/*FAQ*/
+
+.FAQ-container{
+	margin-top: 150px;
+	margin-bottom: 50px;
+	justify-content: center;
+}
+.FAQ-container-img{
+	width: 0%;
+	position: relative;
+	
+}
+.FAQ-container-img img{
+	height: 300px;
+	width: 350px;
+	position: absolute;
+	left: 0px;
+	top: -185px;
+	
+}
+.FAQ-container-text{
+	align-self: center;
+	margin-top: 50px;
+	width: 100%;
+}
+.FAQ-title{
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+/*footer*/
+.footer-container{
+	padding: 25px;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+}
+
+}
